@@ -2,7 +2,6 @@ theme: jekyll-theme-hacker
 show_downloads: false
 lsi: false
 safe: true
-source: /
 incremental: false
 highlighter: rouge
 gist:
