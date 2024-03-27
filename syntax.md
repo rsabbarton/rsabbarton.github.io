@@ -2,11 +2,15 @@
 title: Syntax
 in_menu: true
 sort_info: 10
---- name:sidebar
+--- 
+
+name:sidebar
 <h1>Contents</h1>
 
 {menu: {options: {descendants: true, levels: [2,6]}}}
---- name:content
+--- 
+
+name:content
 
 # kramdown Syntax
 
