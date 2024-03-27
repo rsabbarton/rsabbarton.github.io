@@ -32,7 +32,7 @@
         <ul>
             {% assign mypages = site.pages | sort: "order" %}
             {% for page in mypages %}
-                <li class="contentlinks"><a class="contentlinks" href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+                <div class="contentlinks"><a class="contentlinks" href="{{ page.url | absolute_url }}">{{ page.title }}</a></div>
             {% endfor %}
     
             {% for post in site.posts %}
