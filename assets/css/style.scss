@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-div#sidebar {
+section#sidebar {
     font-size: x-small;
     text-decoration: none;
     width: 200px;
@@ -12,7 +12,7 @@ div#sidebar {
 }
 
 
-div#main_content {
+section#main_content {
     display: inline-block;
     width: 800px;
 }
