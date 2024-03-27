@@ -29,23 +29,13 @@
       </div>
     </header>
 
+    {% include sidebar.html %}
+
     <div class="container">
       <section id="main_content">
         {{ content }}
       </section>
     </div>
-    <div class="container">
-        <section id="sidebar">
-          {{ sidebar }}
-          {% for page in site.pages %}
-    <url>
-        <loc>{{page.url}}</loc>
-        <lastmod>{{site.time | date: '%Y-%m-%d' }}</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    {% endfor %}
-        </section>
-      </div>
+    
   </body>
 </html>
