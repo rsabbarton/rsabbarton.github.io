@@ -21,25 +21,26 @@
       </div>
     </header>
 
-    <div id="sidebar" class="sidebar">
-      <ul>
-          {% assign mypages = site.pages | sort: "order" %}
-          {% for page in mypages %}
-              <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-          {% endfor %}
-  
-          {% for post in site.posts %}
-              <li>
-                  <a href="{{post.url}}">{{site.time | date: '%Y-%m-%d' }} - {{post.title}}</a>
-              </li>
-          {% endfor %}
-      </ul>
-    </div>
+    
 
 
     <div class="container">
       <section id="main_content">
         {{ content }}
+      </section>
+      <section id="sidebar" class="sidebar">
+        <ul>
+            {% assign mypages = site.pages | sort: "order" %}
+            {% for page in mypages %}
+                <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+            {% endfor %}
+    
+            {% for post in site.posts %}
+                <li>
+                    <a href="{{post.url}}">{{site.time | date: '%Y-%m-%d' }} - {{post.title}}</a>
+                </li>
+            {% endfor %}
+        </ul>
       </section>
     </div>
     
