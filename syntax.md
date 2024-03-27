@@ -1,10 +1,8 @@
 ---
 layout: default
+title: A longer page title than I could have ever imagined!
 ---
 
-{menu: {options: {descendants: true, levels: [1,6]}}}
-
----
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
