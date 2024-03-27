@@ -1,10 +1,10 @@
 ---
 layout: default
---- name: sidebar
+---
 
 {menu: {options: {descendants: true, levels: [1,6]}}}
 
---- name: content
+---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
