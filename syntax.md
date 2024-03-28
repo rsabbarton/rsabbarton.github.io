@@ -1,6 +1,6 @@
 ---
 layout: default
-title: A longer page title than I could have ever imagined!
+title: Markdown Syntax Sample
 ---
 
 
