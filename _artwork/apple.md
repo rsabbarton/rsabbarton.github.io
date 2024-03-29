@@ -8,3 +8,5 @@ media: Watercolour pencils on coloured card
 author: Richard Sabbarton
 ---
 
+
+{% include artwork-display.html title=page.title description=page.description file=page.page type=page.type media=page.media author=page.author %}
