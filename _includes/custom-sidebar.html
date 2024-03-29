@@ -2,7 +2,7 @@
 <section id="sidebar" class="sidebar">
     
     <h4>Artwork</h4>
-    {% assign artpages = site.pages | sort: "order" | where:"category","Artwork" %}
+    {% assign artpages = site.pages | where:"category","Artwork" | sort: "order" %}
     {% for artpage in artpages %}
         <div class="contentlinks"><a class="contentlinks" href="{{ artpage.url | absolute_url }}">{{ artpage.title }}</a></div>
     {% endfor %}
