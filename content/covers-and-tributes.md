@@ -1,6 +1,6 @@
 ---
 title: Covers and Tributes
-cagegory: Music
+category: Music
 order: 20
 author: Richard Sabbarton
 ---

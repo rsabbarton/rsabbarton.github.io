@@ -1,6 +1,6 @@
 ---
 title: Digital Artwork
-cagegory: Artwork
+category: Artwork
 order: 20
 author: Richard Sabbarton
 ---

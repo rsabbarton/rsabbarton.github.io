@@ -1,6 +1,6 @@
 ---
 title: Original Music
-cagegory: Music
+category: Music
 order: 10
 author: Richard Sabbarton
 ---

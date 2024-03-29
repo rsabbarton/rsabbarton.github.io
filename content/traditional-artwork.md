@@ -1,6 +1,6 @@
 ---
 title: Traditional Artwork
-cagegory: Artwork
+category: Artwork
 order: 10
 author: Richard Sabbarton
 ---
