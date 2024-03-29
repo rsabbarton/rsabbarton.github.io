@@ -3,8 +3,8 @@
     
     <h4>Artwork</h4>
     {% assign artpages = site.pages | sort: "order" | where:"category","Artwork" %}
-    {% for page in artpages %}
-        <div class="contentlinks"><a class="contentlinks" href="{{ page.url | absolute_url }}">{{ page.title }}</a></div>
+    {% for artpage in artpages %}
+        <div class="contentlinks"><a class="contentlinks" href="{{ artpage.url | absolute_url }}">{{ artpage.title }}</a></div>
     {% endfor %}
 
     <br>
