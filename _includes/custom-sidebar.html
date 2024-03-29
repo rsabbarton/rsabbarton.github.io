@@ -1,7 +1,22 @@
 
 <section id="sidebar" class="sidebar">
     
-    {% assign mypages = site.pages | sort: "order" %}
+    <h4>Artwork</h4>
+    {% assign mypages = site.pages | sort: "order" | where:"category","Artwork"%}
+    {% for page in mypages %}
+        <div class="contentlinks"><a class="contentlinks" href="{{ page.url | absolute_url }}">{{ page.title }}</a></div>
+    {% endfor %}
+
+    <br>
+    <h4>Music</h4>
+    {% assign mypages = site.pages | sort: "order" | where:"category","Music"%}
+    {% for page in mypages %}
+        <div class="contentlinks"><a class="contentlinks" href="{{ page.url | absolute_url }}">{{ page.title }}</a></div>
+    {% endfor %}
+
+    <br>
+    <h4>Development</h4>
+    {% assign mypages = site.pages | sort: "order" | where:"category","Developer"%}
     {% for page in mypages %}
         <div class="contentlinks"><a class="contentlinks" href="{{ page.url | absolute_url }}">{{ page.title }}</a></div>
     {% endfor %}
