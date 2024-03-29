@@ -1,6 +1,7 @@
 ---
 title: Home - Richard's Projects
 level: 0
+category: top
 ---
 
 ## Musician, artist, developer, IT professional and all round comedy genius!
