@@ -1,0 +1,15 @@
+
+<section id="sidebar" class="sidebar">
+    
+    {% assign mypages = site.pages | sort: "order" %}
+    {% for page in mypages %}
+        <div class="contentlinks"><a class="contentlinks" href="{{ page.url | absolute_url }}">{{ page.title }}</a></div>
+    {% endfor %}
+
+    <br>
+    
+    {% for post in site.posts %}
+      <div class="contentlinks"><a class="contentlinks" href="{{post.url}}">{{site.time | date: '%Y-%m-%d' }} - {{post.title}}</a></div>
+    {% endfor %}
+
+</section>
