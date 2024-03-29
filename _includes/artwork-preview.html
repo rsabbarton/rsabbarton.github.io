@@ -2,11 +2,10 @@
 
 <div class="previewcontainer">
     <figure>
-        <a href="{{ include.file }}">
-        <img src="/static/{{ include.file }}" class="previewimage">
-           alt="{{ include.alt }}"/>
+        <a href="/artwork/{{ include.page }}">
+            <img src="/static/{{ include.file }}" class="previewimage">
         </a>
-        <figcaption>{{ include.description }}</figcaption>
+        {{ include.description }}
         Media: {{ include.media }}
         By: {{ include.author }}
      </figure>
