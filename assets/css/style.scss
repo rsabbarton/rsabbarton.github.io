@@ -10,6 +10,11 @@ section#sidebar {
     position: absolute;
     display: inline-block;
     margin-left: 30px;
+    border-style: solid;
+    border-width: 1px 0px 0px 1px;
+    border-radius: 20px;
+    padding: 20px;
+    border-color: palegreen;
 }
 
 
