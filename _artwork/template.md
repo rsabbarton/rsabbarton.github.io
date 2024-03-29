@@ -2,7 +2,7 @@
 title: 
 description: 
 file: 
-type: traditional
+type: traditional | digital
 media: 
 author: Richard Sabbarton
 ---
