@@ -1,6 +1,8 @@
 ---
 title: My First Time using Jekyll
 category: Developer
+order: 20
+author: Richard Sabbarton
 ---
 
 # Well... This is awkward
