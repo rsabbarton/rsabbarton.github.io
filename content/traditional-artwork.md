@@ -8,8 +8,5 @@ author: Richard Sabbarton
 Placeholder for my traditional artwork
 
 {% for art in site.artwork %}
-<div class="contentlinks"><a class="contentlinks" href="{{ art.file | absolute_url }}">{{ art.title }}</a></div>
-{{ art.description }}
-{{ art.media }}
-{{ art.author }}
+{% include artwork-preview.html title="{ art.title }" description="{ art.description }" file="{ art.file }" type="{ art.type }" media="{ art.media }" author="{ art.author }" %}
 {% endfor %}
