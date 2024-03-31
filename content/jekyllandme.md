@@ -1,55 +1,29 @@
 ---
-title: My First Time using Jekyll
+title: Moving to Github Pages
 category: Developer
 order: 20
 author: Richard Sabbarton
 ---
 
-# Well... This is awkward
+# Making a choice
 
-In short, I have been very shy in interacting with the build process and 
-preferred, historically, to work in just JavaScript ES6 and avoid plugins
-and modules that could have made my life easier.  The reason being is
-that, well... I like the challenge.  It is one of the reason why I code
-so using plugins and modules used to feel like flicking to the back pages
-of a crossword book or getting clues to a sudoku.
+Until now, I have been managing a VPS which has become more and more 
+resource demanding as I run different projects and processes.
 
-# Why Jekyll?
+It occurred to me that this was mainly unncessary!  While it was a great
+tool for me to learn how to manage things like Node and Nginx.  I also 
+ran databases like MySQL and Mongo and learned how to manage different 
+processors and environments such as PHP and WordPress.
 
-GH Pages and the hosting of Jekyll here allows me to experiment with using 
-these plugins while actually acheiving something.  There is actually a purpose
-to me creating this site in GitHub and not just for the challenge.
+I decided that my projects needed a more stable environment where I could 
+also manage the project versions and source control.  I was already using 
+GitHub to manage the code for my projects so moving to GitHub Pages was
+almost a no-brainer.
 
-# Where am I at?
+# PixelFlux
 
-Until last week, I was running a VPS and hosting a number of projects through
-Node, Express, Nginx, HTML and Javascript.  But I realise that actually, as a 
-"developer" I would probably have limited exposure to these tools which are 
-predominantly back-end.  I wrote my own CMS to manage the pages and used my 
-own templating engine to prepare and serve files through Express.
+The first project to be migrated over to GitHub Pages was PixelFlux:
 
-Now, my VPS is gone, shut-down, destroyed, uninstantiated, nullified, and OFF.
-But I want to continue my path towards becoming a better developer.  Building this
-site through GitHub Pages and using Jekyll to manage the templating and conversion
-from markdown is a way for me to attack this from a different angle.
+(https://rsabbarton.github.io/PixelFlux)[PixelFlux]
 
-# What are my goals
-
-## 1. Create a website
-
-I want to create this site not for the "challenge" but as a place where I can showcase
-my work, not only as a developer but as an artist and a musician.
-
-## 2. Learn to use Jekyll
-
-I am always trying to learn as much as I can through all of the projects I start, complete,
-pause and even abandon.
-
-## 3. Learn more about Git/GitHub and version control in general
-
-Again, I have very little experience using Git and always found my own ways of controlling versions
-and iterations within my projects.
-
-## 4. Have Fun...  
-
-Coding has always been enjoyable to me.  So I save the best for last.
+{% include image.html file="pixelflux.png" %}
