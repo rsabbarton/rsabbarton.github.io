@@ -22,8 +22,7 @@ almost a no-brainer.
 
 # PixelFlux
 
-The first project to be migrated over to GitHub Pages was PixelFlux:
-
-[PixelFlux](https://rsabbarton.github.io/PixelFlux)
+The first project to be migrated over to GitHub Pages was PixelFlux
+[PixelFlux](https://rsabbarton.github.io/PixelFlux):
 
 {% include image.html file="pixelflux.png" %}
