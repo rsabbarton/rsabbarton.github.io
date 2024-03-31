@@ -1,6 +1,8 @@
 ---
 title: Jekyll and Me
 category: Developer
+author: Richard Sabbarton
+tags: [ dev, diary ]
 ---
 
 # Well... This is awkward
