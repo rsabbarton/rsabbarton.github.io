@@ -1,11 +1,11 @@
 
 
 <div class="previewcontainer">
-        <div><b><u>{{ include.title }}</u></b> </div>
+        <div class="previewtitle">{{ include.title }} </div>
         <a href="/artwork/{{ include.page }}">
             <img src="/static/artwork/{{ include.file }}" class="previewimage">
         </a>
-        <div><b>{{ include.description }}</b></div>
-        <div><b>Media:</b> <i>{{ include.media }}</i></div>
-        <div>By:<b></b> <i>{{ include.author }}</i></div>
+        <div class="previewdescription"><b>{{ include.description }}</b></div>
+        <div class="previewinfo"><b>Media:</b> <i>{{ include.media }}</i></div>
+        <div class="previewinfo">By:<b></b> <i>{{ include.author }}</i></div>
 </div>
