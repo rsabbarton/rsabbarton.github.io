@@ -1,7 +1,7 @@
 ---
 title: Rocky the Cat
 description: A very early animal sketch of my pet cat Rocky.
-file: /workspaces/rsabbarton.github.io/static/artwork/Rocky the cat.JPG
+file: Rocky the cat.JPG
 page: rocky.html
 rank: 30
 type: traditional
