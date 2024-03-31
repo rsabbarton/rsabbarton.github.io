@@ -23,6 +23,6 @@ almost a no-brainer.
 # PixelFlux
 
 The first project to be migrated over to GitHub Pages was PixelFlux
-[PixelFlux](https://rsabbarton.github.io/PixelFlux):
+[PixelFlux](https://rsabbarton.github.io/PixelFlux){:target="_blank"}:
 
 {% include image.html file="pixelflux.png" %}
