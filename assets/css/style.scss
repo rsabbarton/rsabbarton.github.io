@@ -56,8 +56,8 @@ div#pagetitledisplay {
 }
 
 .previewtitle {
-    font-size: small;
-    font-weight: bold;
+    font-size: medium;
+    font-weight: normal;
     margin-bottom: 10px;
     width: 100%;
     text-align: center;
@@ -66,6 +66,7 @@ div#pagetitledisplay {
 .previewdescription {
     font-weight: bold;
     margin: 3px;
+    font-size: 12px;
 }
 
 .previewinfo {
