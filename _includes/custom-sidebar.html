@@ -1,21 +1,21 @@
 
 <section id="sidebar" class="sidebar">
     
-    <h4>Artwork</h4>
+    <div class="sidebarheading">Artwork</div>
     {% assign artpages = site.pages | where:"category","Artwork" | sort: "order" %}
     {% for artpage in artpages %}
         <div class="contentlinks"><a class="contentlinks" href="{{ artpage.url | absolute_url }}">{{ artpage.title }}</a></div>
     {% endfor %}
 
     <br>
-    <h4>Music</h4>
+    <div class="sidebarheading">Music</div>
     {% assign mypages = site.pages | where:"category","Music" | sort: "order" %}
     {% for page in mypages %}
         <div class="contentlinks"><a class="contentlinks" href="{{ page.url | absolute_url }}">{{ page.title }}</a></div>
     {% endfor %}
 
     <br>
-    <h4>Development</h4>
+    <div class="sidebarheading">Development</div>
     {% assign mypages = site.pages | where:"category","Developer" | sort: "order" %}
     {% for page in mypages %}
         <div class="contentlinks"><a class="contentlinks" href="{{ page.url | absolute_url }}">{{ page.title }}</a></div>
@@ -23,7 +23,7 @@
 
     <br>
     
-    <h4>Blog Posts</h4>
+    <div class="sidebarheading">Blog Posts</div>
     {% for post in site.posts %}
       <div class="contentlinks"><a class="contentlinks" href="{{post.url}}">{{site.time | date: '%Y-%m-%d' }} - {{post.title}}</a></div>
     {% endfor %}
