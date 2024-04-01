@@ -27,7 +27,7 @@
     
     <div class="sidebarheading">Blog Posts</div>
     {% for post in site.posts %}
-      <div class="contentlinks"><a class="contentlinks" href="{{post.url}}">{{site.time | date: '%Y-%m-%d' }} - {{post.title}}</a></div>
+      <div class="contentlinks"><a class="contentlinks" href="{{post.url}}">{{post.time | date: '%Y-%m-%d' }} - {{post.title}}</a></div>
     {% endfor %}
 
 </section>

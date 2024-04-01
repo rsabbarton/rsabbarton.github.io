@@ -2,6 +2,7 @@
 title: Jekyll and Me
 category: Developer
 author: Richard Sabbarton
+date: 2024-03-27
 tags: [ dev, diary ]
 ---
 
