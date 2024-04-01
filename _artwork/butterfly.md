@@ -2,7 +2,7 @@
 title: Butterfly Painting
 description: A gift
 file: Butterfly Painting.JPG
-page: this file.html
+page: butterfly.html
 rank: 10
 type: traditional
 media: Acrylic on canvas

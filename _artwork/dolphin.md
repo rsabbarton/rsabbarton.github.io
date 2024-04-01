@@ -2,7 +2,7 @@
 title: Dolphin
 description: Dolphins are one of my favourite sea creatures
 file: Dolphin Finished.jpg
-page: this file.html
+page: dolphin.html
 rank: 20
 type: traditional
 media: Sketchbook and pencil
