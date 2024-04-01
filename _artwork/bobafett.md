@@ -2,7 +2,7 @@
 title: Boba Fett
 description: My favourite bad-ass bounty-hunter
 file: Boba_Fett.JPG
-page: apple.html
+page: bobafett.html
 rank: 50
 type: traditional
 media: Derwent Sketch Pencils on smooth sketch paper
