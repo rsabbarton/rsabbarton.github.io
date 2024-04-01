@@ -37,7 +37,7 @@ These are not just RBG but RGBA values.  This means that we need to ensure we ta
 
 Here is the source code for my blend() function.
 
-
+```js
 
     //  #######################################################
     //  #
@@ -122,4 +122,4 @@ Here is the source code for my blend() function.
         return c // Whew.
     }
 
-
+```
