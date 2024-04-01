@@ -2,7 +2,7 @@
 title: Basic Shell
 category: Developer
 author: Richard Sabbarton
-date: 2024-04-01
+customdate: 2024-04-01
 tags: [ dev, diary ]
 ---
 
