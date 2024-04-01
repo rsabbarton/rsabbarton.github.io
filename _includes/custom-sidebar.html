@@ -7,21 +7,21 @@
         <div class="contentlinks"><a class="contentlinks" href="{{ artpage.url | absolute_url }}">{{ artpage.title }}</a></div>
     {% endfor %}
 
-    <br>
+
     <div class="sidebarheading">Music</div>
     {% assign mypages = site.pages | where:"category","Music" | sort: "order" %}
     {% for page in mypages %}
         <div class="contentlinks"><a class="contentlinks" href="{{ page.url | absolute_url }}">{{ page.title }}</a></div>
     {% endfor %}
 
-    <br>
+
     <div class="sidebarheading">Development</div>
     {% assign mypages = site.pages | where:"category","Developer" | sort: "order" %}
     {% for page in mypages %}
         <div class="contentlinks"><a class="contentlinks" href="{{ page.url | absolute_url }}">{{ page.title }}</a></div>
     {% endfor %}
 
-    <br>
+
     
     <div class="sidebarheading">Blog Posts</div>
     {% for post in site.posts %}
