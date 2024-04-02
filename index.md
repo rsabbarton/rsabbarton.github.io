@@ -16,4 +16,7 @@ in many languages including:
 I play the guitar and piano and I love to draw and paint both mixed media and 
 digitally.
 
+## Active Projects
 
+ - [PixelFlux](https://rsabbarton.github.io/PixelFlux){:target="_blank"}:
+   An in-browser Pixel Art asset creation tool
