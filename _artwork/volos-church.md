@@ -1,9 +1,9 @@
 ---
-title: Volos Church
-description: A gift for a colleague who was from Volos.  This church is a hugh landmark.
+title: Church of Saints Constantine and Helena
+description: A gift for a colleague who was from Volos
 file: Volos Church.JPG
 page: volos-church.html
-rank: 50
+rank: 60
 type: traditional
 media: Watercolours and pens on black card
 author: Richard Sabbarton
