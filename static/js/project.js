@@ -15,7 +15,7 @@ class Project {
         console.log(this.container)
         this.container.innerHTML = ""
         this.apiUrl = `https://api.github.com/repos/${this.config.githubOrg}/${this.config.githubRepo}`
-        get(apiUrl)
+        this.get(apiUrl)
         .then((response)=>{
             console.log(response)
             this.container.innerHTML = response
