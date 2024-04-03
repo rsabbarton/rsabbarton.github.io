@@ -11,7 +11,7 @@ class Project {
         console.log(options)
         this.options = options
 
-        this.container = document.getElementById(config.containerId)
+        this.container = document.getElementById(this.config.containerId)
         console.log(this.container)
         this.container.innerHTML = ""
         this.apiUrl = `https://api.github.com/repos/${this.config.githubOrg}/${this.config.githubRepo}`
