@@ -72,7 +72,7 @@ class Project {
             <h1 class="project">Open Issues</h1>
         `
         this.container.appendChild(issues)
-        this.get(`${this.apiUrl}/issues?state=open`)
+        this.get(`${this.apiUrl}/issues?state=open&sort=updated_at`)
         .then((response)=>{
             console.log(response)
 
@@ -85,11 +85,13 @@ class Project {
                 let title = i.title
                 let body = i.body
                 let milestone = i.milestone.title
-                let status = i.status
+                let status = i.state
+                let time = i.updated_at
+
 
                 issueDiv.innerHTML = `
                     <h3 class="issuetitle">${title}</h3>
-                    <div class="issueinfo"><b>Milestone:</b> ${milestone} - <b>Status:</b> ${status}</div>
+                    <div class="issueinfo"><b>Milestone:</b> ${milestone} - <b>Status:</b> ${status} Last Update: ${time}</div>
                     <div class="issuebody">${body}</div>
                     <div class="issueinfo"?<b>URL:</b> <a href="${url}">${url}</a></div>
                 `
