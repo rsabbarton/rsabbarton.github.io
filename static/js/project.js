@@ -48,7 +48,7 @@ class Project {
     }
 
     renderDetails(){
-        let details = document.getElementById("div")
+        let details = document.createElement("div")
         details.classList.add('projectdetails')
         let detailsHTML = `
             <h1>Project Info</h1>
