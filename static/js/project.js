@@ -72,6 +72,25 @@ class Project {
         this.get(`${this.apiUrl}/issues?state=open`)
         .then((response)=>{
             console.log(response)
+
+            response.forEach(i=>{
+                let issueDiv = document.createElement("div")
+                issueDiv.id = i.id
+                issueDiv.classList.add("issuediv")
+                let url = i.url
+                let title = i.title
+                let desc = i.description
+                let milestone = i.milestone.title
+                let status = i.status
+
+                issueDiv.innerHTML = `
+                    <h3>${title}</h3>
+                    <div>${description}</div>
+                    <div><b>Milestone:</b> ${milestone} - <b>Status:</b> ${status} <br>
+                    <b>URL:</b> <a href="${url}">${url}</a></div>
+                `
+                issues.appendChild(issueDiv)
+            })
             
         })
     }
