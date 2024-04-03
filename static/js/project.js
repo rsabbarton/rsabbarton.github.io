@@ -52,7 +52,7 @@ class Project {
         let details = document.createElement("div")
         details.classList.add('projectdetails')
         let detailsHTML = `
-            <h1>Project Info</h1>
+            <h1 class="project">Project Info</h1>
             <div><b>Project Name: </b>${this.project.name}</div>
             <div><b>Description: </b>${this.project.description}</div>
             <div><b>Owner: </b>${this.project.owner.login}</div>
@@ -69,7 +69,7 @@ class Project {
         issues.id = "projectissues"
         issues.classList.add("projectissues")
         issues.innerHTML = `
-            <h1>Open Issues</h1>
+            <h1 class="project">Open Issues</h1>
         `
         this.container.appendChild(issues)
         this.get(`${this.apiUrl}/issues?state=open`)
@@ -81,7 +81,7 @@ class Project {
                 issueDiv.id = i.id
                 issueDiv.classList.add("issuediv")
                 
-                let url = i.url
+                let url = i.html_url
                 let title = i.title
                 let body = i.body
                 let milestone = i.milestone.title
