@@ -68,6 +68,9 @@ class Project {
         let issues = document.createElement("div")
         issues.id = "projectissues"
         issues.classList.add("projectissues")
+        issues.innerHTML = `
+            <h1>Open Issues</h1>
+        `
         this.container.appendChild(issues)
         this.get(`${this.apiUrl}/issues?state=open`)
         .then((response)=>{
@@ -77,6 +80,7 @@ class Project {
                 let issueDiv = document.createElement("div")
                 issueDiv.id = i.id
                 issueDiv.classList.add("issuediv")
+                
                 let url = i.url
                 let title = i.title
                 let body = i.body
@@ -84,10 +88,10 @@ class Project {
                 let status = i.status
 
                 issueDiv.innerHTML = `
-                    <h3>${title}</h3>
-                    <div>${body}</div>
-                    <div><b>Milestone:</b> ${milestone} - <b>Status:</b> ${status} <br>
-                    <b>URL:</b> <a href="${url}">${url}</a></div>
+                    <h3 class="issuetitle">${title}</h3>
+                    <div class="issueinfo"><b>Milestone:</b> ${milestone} - <b>Status:</b> ${status}</div>
+                    <div class="issuebody">${body}</div>
+                    <div class="issueinfo"?<b>URL:</b> <a href="${url}">${url}</a></div>
                 `
                 issues.appendChild(issueDiv)
             })
