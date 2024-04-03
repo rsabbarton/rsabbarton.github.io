@@ -72,7 +72,7 @@ class Project {
             <h1 class="project">Open Issues</h1>
         `
         this.container.appendChild(issues)
-        this.get(`${this.apiUrl}/issues?state=open&sort=updated_at`)
+        this.get(`${this.apiUrl}/issues?state=open&sort=updated&direction=desc`)
         .then((response)=>{
             console.log(response)
 
