@@ -55,7 +55,8 @@ class Project {
             <div><b>Project Name: </b>${this.project.name}</div>
             <div><b>Description: </b>${this.project.description}</div>
             <div><b>Owner: </b>${this.project.owner.login}</div>
-       
+            <div><b>Language: </b>${this.project.language}</div>
+            <div><b>Project URL: </b><a href="${this.project.url}">${this.project.url}</a></div>
             `
         details.innerHTML = detailsHTML
         this.container.appendChild(details)
