@@ -52,8 +52,8 @@ class Project {
         let details = document.createElement("div")
         details.classList.add('projectdetails')
         let detailsHTML = `
-            <h1 class="project">Project Info</h1> (<a href="https://rsabbarton.github.io/${this.project.name}">Launch</a>)
-            <div><b>Project Name: </b>${this.project.name}</div>
+            <h1 class="project">Project Info</h1>
+            <div><b>Project Name: </b>${this.project.name} (<a href="https://rsabbarton.github.io/${this.project.name}">Launch</a>)</div>
             <div><b>Description: </b>${this.project.description}</div>
             <div><b>Owner: </b>${this.project.owner.login}</div>
             <div><b>Language: </b>${this.project.language}</div>
