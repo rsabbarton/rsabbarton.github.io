@@ -17,6 +17,13 @@
     {% endfor %}
 
 
+    <div class="sidebarheading">Projects</div>
+    {% assign mypages = site.pages | where:"category","Project" | sort: "order" %}
+    {% for page in mypages %}
+        <div class="contentlinks"><a class="contentlinks" href="{{ page.url | absolute_url }}">{{ page.title }}</a></div>
+    {% endfor %}
+
+
     <div class="sidebarheading">Development</div>
     {% assign mypages = site.pages | where:"category","Developer" | sort: "order" %}
     {% for page in mypages %}
