@@ -9,18 +9,21 @@
 </div>
 
 <script>
-    const project = new Project({
-        containerId: "projectcontainer",
-        projectName: "{{ include.projectName }}",
-        githubOrg: "{{ include.githubOrg }}",
-        githubRepo: "{{ include.githubRepo }}"
-    })
+    document.body.onload = (event)=>{
+        const project = new Project({
+            containerId: "projectcontainer",
+            projectName: "{{ include.projectName }}",
+            githubOrg: "{{ include.githubOrg }}",
+            githubRepo: "{{ include.githubRepo }}"
+        })
 
-    let renderOptions = {
-        showMilestones: true,
-        showIssues: true,
-        showActivity: true
+        let renderOptions = {
+            showMilestones: true,
+            showIssues: true,
+            showActivity: true
+        }
+
+        project.render(renderOptions)
     }
-
-    project.render(renderOptions)
+    
 </script>
