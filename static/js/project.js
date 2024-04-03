@@ -48,7 +48,7 @@ class Project {
     }
 
     renderDetails(){
-        let details = document.createElement("div")
+        let details = document.getElementById("div")
         details.classList.add('projectdetails')
         let detailsHTML = `
             <h1>Project Info</h1>
@@ -60,5 +60,18 @@ class Project {
             `
         details.innerHTML = detailsHTML
         this.container.appendChild(details)
+    }
+
+    renderIssues(){
+        let issuesHTML = ""
+        let issues = document.createElement("div")
+        issues.id = "projectissues"
+        issues.classList.add("projectissues")
+        this.container.appendChild(issues)
+        this.get(`${this.apiUrl}/issues?state=open`)
+        .then((response)=>{
+            console.log(response)
+            
+        })
     }
 }
