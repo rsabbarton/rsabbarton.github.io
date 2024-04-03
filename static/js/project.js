@@ -79,13 +79,13 @@ class Project {
                 issueDiv.classList.add("issuediv")
                 let url = i.url
                 let title = i.title
-                let desc = i.description
+                let body = i.body
                 let milestone = i.milestone.title
                 let status = i.status
 
                 issueDiv.innerHTML = `
                     <h3>${title}</h3>
-                    <div>${description}</div>
+                    <div>${body}</div>
                     <div><b>Milestone:</b> ${milestone} - <b>Status:</b> ${status} <br>
                     <b>URL:</b> <a href="${url}">${url}</a></div>
                 `
