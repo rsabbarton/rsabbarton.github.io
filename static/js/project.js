@@ -45,6 +45,7 @@ class Project {
 
     createPage(){
         this.renderDetails()
+        this.renderIssues()
     }
 
     renderDetails(){
