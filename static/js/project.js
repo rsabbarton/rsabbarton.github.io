@@ -18,7 +18,8 @@ class Project {
         this.get(this.apiUrl)
         .then((response)=>{
             console.log(response)
-            this.container.innerHTML = response
+            this.project = response
+            this.createPage()
         })
 
     }
@@ -39,5 +40,24 @@ class Project {
                 reject(e);
             }
         })
+    }
+
+
+    createPage(){
+        this.renderDetails()
+    }
+
+    renderDetails(){
+        let details = document.createElement("div")
+        details.classList.add('projectdetails')
+        let detailsHTML = `
+            <h1>Project Info</h1>
+            <div><b>Project Name: </b>${this.project.name}</div>
+            <div><b>Description: </b>${this.project.description}</div>
+            <div><b>Owner: </b>${this.project.owner.login}</div>
+       
+            `
+        details.innerHTML = detailsHTML
+        this.container.appendChild(details)
     }
 }
