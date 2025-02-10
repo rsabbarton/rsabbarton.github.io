@@ -20,3 +20,5 @@ digitally.
 
  - [PixelFlux](https://rsabbarton.github.io/PixelFlux){:target="_blank"}:
    An in-browser Pixel Art asset creation tool
+ - [Clipboard Manager](https://clipboardmanager.sourceforge.io){:target="_blank"}:
+   A cross-platform, easy to use, clipboard manager.  View, edit, copy images and text
